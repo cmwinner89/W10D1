@@ -4,49 +4,49 @@ class DomNodeCollection {
     }
 
 
-empty() {
+    empty() {
+       this.html('');
+    }
+
+    remove() {
+
+    }
+
+    attr() {
 
 
-}
+    }
 
-remove() {
-
-}
-
-attr() {
+    addClass() {
 
 
-}
+    }
 
-addClass() {
+    removeClass() {
 
+    }
 
-}
+    html(str) {
+        if (!str) { 
+            return this.nodes[0].innerHTML;
+        } else {
+            this.nodes.forEach( node => {
+                node.innerHTML = str;
+            });
+        }
+    }
 
-removeClass() {
+    find() {
 
-}
+    }
 
-html(str) {
-if (typeof str === "string") {
-    // str becomes innerHTML 
-} 
-}
+    children() {
 
-find() {
+    }
 
-}
+    parent() {
 
-children() {
-
-}
-
-parent() {
-
-}
-
-
-
+    }
 
 }
 
